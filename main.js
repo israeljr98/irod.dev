@@ -75,7 +75,7 @@ planet.position.x = 27;
 
 let izzi;
 const gltfLoader = new GLTFLoader();
-gltfLoader.load("assets/izziLogo.glb", (gltf) => {
+gltfLoader.load("/assets/izziLogo.glb", (gltf) => {
   const root = gltf.scene;
   scene.add(root);
   if (vw > 800) {
