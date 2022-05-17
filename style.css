@@ -168,6 +168,9 @@ section {
   /* border-radius: 12px; */
 }
 
+
+
+
 #skill-list {
   columns: 1;
   word-wrap: break-word;
@@ -368,6 +371,10 @@ ul {
   section {
     margin-bottom: 450px;
   }
+}
+
+#ucb {
+  color:#fff;
 }
 
 #ucb:hover {
