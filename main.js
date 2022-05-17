@@ -82,9 +82,9 @@ gltfLoader.load("/assets/izziLogo.glb", (gltf) => {
     root.position.set(11.5, -6, -20);
     root.scale.set(8.75, 9.5, 8.75);
   } else {
-    root.position.x = -39;
-    root.position.z = 140;
-    root.position.y = -20;
+    root.position.x = -24;
+    root.position.z = 152;
+    root.position.y = -22;
     root.scale.set(9.75, 10.5, 9.75);
   }
 
@@ -93,6 +93,12 @@ gltfLoader.load("/assets/izziLogo.glb", (gltf) => {
 
   izzi = root;
 });
+
+function setIzziPosition() {
+  izzi.position.x = -24;
+  izzi.position.z = 150;
+  izzi.position.y = -22;
+}
 
 // Lighting that illuminates the entire scene
 const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -179,7 +185,7 @@ function addStar() {
   const [x, y, z] = Array(3)
     .fill()
     // Chooses a real number between -100 and 100
-    .map(() => THREE.MathUtils.randFloatSpread(245));
+    .map(() => THREE.MathUtils.randFloatSpread(300));
 
   star.position.set(x, y, z);
 
@@ -191,7 +197,7 @@ function addStar() {
   scene.add(star);
 }
 
-Array(290).fill().forEach(addStar);
+Array(310).fill().forEach(addStar);
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
@@ -224,9 +230,10 @@ function onWindowResize() {
       window.innerWidth || 0
     );
     if (vw <= 800) {
-      izzi.position.x = -39;
-      izzi.position.z = 140;
-      izzi.position.y = -19;
+      // izzi.position.x = -39;
+      // izzi.position.z = 140;
+      // izzi.position.y = -19;
+      setIzziPosition();
       izzi.scale.set(9.75, 10.5, 9.75);
     } else {
       izzi.position.set(11.5, -6, -20);
