@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Israel Rodriguez</title>
+</head>
+<body>
+
+  <header>
+    <div class="header-content fade-in">
+        <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>          
+            </ul>
+        </nav>
+    </div>
+    
+  </header>
+
+  <div class="topnav">
+    <a href="#home" class="active" id="corner">I</a>
+    <div id="myLinks">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="javascript:void(0);" id="ham" class="icon" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="content">
+    <div class="wrapper">
+        <div class="content-wrapper fade-in" id="intro-wrapper">
+            <section id="intro">
+                <h1>Israel Rodriguez</h1>
+                <p id="subheading">Software Developer</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="wrapper1" id="about">
+        <div class="content-wrapper fade-in" id="about-wrapper">
+            <section>
+                <h2 id="aboutMe">About Me</h2>
+                <p>Hey, what's up? My name is Israel Rodriguez, and I am a software developer based out of Los Angeles, CA.
+                    <!-- <br>
+                    <br> -->
+                    I studied Computer Science alongside Cognitive Science at the University
+                    of California, Berkeley where I explored the intersections between computing and the mind. 
+                    Since then, I've ventured into the world of professional software development, 
+                    where I've had the pleasure of working for a wide array of companies and projects.
+                    I am always looking for the next learning opportunity. 
+                </p>
+              </section>
+        </div>
+    </div>
+
+    <div class="wrapper" id="work">
+        <div class="content-wrapper fade-in" id="work-wrapper">
+            <section id="intro-sec">
+                <h2>Work Experience</h2>
+                <div class="exp">
+                    <h3 class="job-title">Android Developer</h3>
+                    <h3 class="company-name">BlackBerry Ltd.</h3>
+                    <h3 class="company-tenure">Jun 2022 - Nov 2023</h3>
+                    <div class="exp-desc">
+                        <p id="bb">In this role, I worked on anti-eavesdropping software for Secusmart, a BlackBerry subsidiary serving government 
+                            and military agencies, where I...
+                        </p>
+                        <ul class="exp-ul">
+                            <li>
+                                Injected a secure communication protocol into the 
+                            Android OS framework using a combination of Java, Python, C among other tools.
+                            </li>
+                            <li>
+                                Designed and implemented proxies emulating key Android classes and functions.
+                            </li>
+                            <li>
+                                Explored APK assembly and disassembly as a means to
+                             analyze and secure Android applications effectively. 
+                            </li>
+                            <li>
+                                Integrated the SMB protocol into an Android-based file manager 
+                            application, with a specific focus on refining the file renaming functionality. 
+                            </li>
+                            <li>
+                                Embedded precise tablet detection in Kotlin-based web browser app by making use of Android OS
+framework data to auto-enable desktop mode, enabling seamless access to desktop version of web apps.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </section>
+        </div>
+    </div>
+    
+    <div class="wrapper1" id="projects">
+        <div class="content-wrapper fade-in" id="project-wrapper">
+            <section>
+                <h2>Projects</h2>
+                <!-- <h2 id="projects-h">PROJECTS</h2> -->
+                <div id="project">
+                    <div class="item">
+                        <a href="https://slapbox.net/" class="project-link">
+                            <div class="overlay-text">
+                                <h3 class="project-headline">SLAPBOX</h3>
+                                <div class="img-wrapper">
+                                    <img src="assets/img/slapbox2.png" alt="">
+                                </div>
+                                <p class="proj-desc"> 
+                                    Used the SoundCloud Widget API and various JavaScript libraries to craft 
+                                    an interactive 3D music discovery experience.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://github.com/israeljr98/lines-of-action" class="project-link">
+                            <div class="overlay-text">
+                                <h3 class="project-headline">Lines of Action</h3>
+                                <div class="img-wrapper">
+                                    <img src="assets/img/loa1.png" alt="">
+                                </div>
+                                <p class="proj-desc">A Java implementation of <i>Lines of Action</i>, 
+                                    a board game where the player's goal is to get all of their pieces 
+                                    together in one contiguous block. It features an AI agent that 
+                                    operates via minimax with alpha-beta pruning to achieve optimal play.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://bcourses-clone.netlify.app/" class="project-link">
+                            <div class="overlay-text">
+                                <h3 class="project-headline">Canvas Clone</h3>
+                                <div class="img-wrapper">
+                                    <img src="assets/img/bcourses.png" alt="">
+                                </div>
+                                <p class="proj-desc">Replicated the homepage of the Canvas platform. The design features a fully functional sidebar for quick navigation across 
+                                    sections.
+                                </p> 
+                            </div>
+                        </a>
+                    </div> 
+    
+                    <div class="item">
+                        <a href="https://finstagram-izzi.netlify.app/" class="project-link">
+                            <div class="overlay-text">
+                                <h3 class="project-headline">Finstagram</h3>
+                                <div class="img-wrapper">
+                                    <img src="assets/img/finstagram3.png" alt="">
+                                </div>
+                                <p class="proj-desc">A front-end for a mock Instagram profile page with
+                                    a lightbox feature powered by Javascript 
+                                    that spotlights a clicked image along with a caption. </p>
+                            </div>
+                        </a>
+                    </div>
+    
+                   
+                
+                    
+                    
+                    <div class="item">
+                        <a href="https://github.com/israeljr98/gitlet" class="project-link">
+                            <div class="overlay-text">
+                                <h3 class="project-headline">Gitlet</h3>
+                                <div class="img-wrapper">
+                                    <img src="assets/img/gitlet.png" alt="">
+                                </div>
+                                <p class="proj-desc">A simpler version of the version control system Git written in Java. 
+                                    It supports a number of Git commands, including initializing a repository, creating commits, 
+                                    and merging branches. </p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                    <div class="item">
+                        <a href="https://github.com/israeljr98/numc/tree/main/matrix-ops" class="project-link">
+                            <div class="overlay-text">
+                                <h3 class="project-headline">NumC</h3>
+                                <div class="img-wrapper">
+                                    <img src="assets/img/numc.png" alt="">
+                                </div>
+                                <p class="proj-desc">A matrix operations library for Python powered by C via the Python/C API. It uses data-level and thread-level parallelism to achieve significant performance increases for heavy matrix operations.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://loading-gallery.netlify.app/" class="project-link">
+                            <div class="overlay-text">
+                                <h3 class="project-headline">Loading Gallery</h3>
+                                <div class="img-wrapper" id="loading">
+                                    <img src="assets/img/loadingGallery.png" alt="">
+                                </div>
+                                <p class="proj-desc" id="loading-desc">
+                                    A small site featuring a diverse collection of stylish loading animations built using HTML and CSS.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="item">
+                        <a href="https://github.com/israeljr98/scheme-interpreter" class="project-link">
+                            <div class="overlay-text">
+                                <h3 id="scheme" class="project-headline">Scheme</h3>
+                                <div class="img-wrapper">
+                                    <img src="assets/img/scheme.png" alt="">
+                                </div>
+                                <p class="proj-desc" id="scheme-desc">Built a Python-based interpreter for the programming language Scheme. It is designed to handle various Scheme expressions, including special forms, procedures, and logical constructs.</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                       
+              </section>
+        </div>
+    </div>
+
+    <div class="wrapper" id="contact">
+        <div class="content-wrapper fade-in" id="contact-wrapper">
+            <section id="contact-section">
+                <h2 id="contact-header">Contact Me</h2>
+                <div id="buttons">
+                    <ul id="contact-list">
+                        <a href="mailto: israeljr98@gmail.com">
+                            <!-- <li><b>Email</b></li> -->
+                            <img src="assets/img/icons8-email-48.png" alt="" class="logo">
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/israeljr98" target="_blank">
+                            <!-- <li><b>LinkedIn</b></li> -->
+                            <img src="assets/img/icons8-linkedin.svg" alt="" class="logo">
+                        </a>
+                        <a href="https://github.com/israeljr98" target="_blank">
+                            <!-- <li><b>Github</b></li> -->
+                            <img src="assets/img/icons8-github-96.png" alt="" class="logo">
+                        </a>
+                            
+                    </ul>
+                </div>
+              </section>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Israel Rodriguez. All Rights Reserved.</p>
+  </footer>
+
+  
+<script src="main.js" type="module"></script>
+</body>
+</html>

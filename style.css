@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Manrope:wght@400;500;700;800&family=Rubik+Doodle+Shadow&family=Work+Sans&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #11151C;
+  color: #FEFAE0;
+  /* padding-top: 80px; */
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Initial position slightly below */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* Final position at the top */
+}
+
+header {
+  position: fixed;
+  background-color: #11151C;
+  width: 100%;
+  height: 80px;
+  /* box-shadow: 0 2px 4px 0px rgba(254, 250, 224, 0.1); */
+  z-index: 1000;
+  /* box-shadow: 0 2px 4px 0px rgba(0,0,0,.3); */
+  
+}
+
+.topnav {
+  display: none;
+}
+
+.scrolled {
+  box-shadow:
+    0 4px 4px rgba(0, 0, 0, 0.25),  
+    0 8px 16px rgba(0, 0, 0, 0.15) 
+    /* 0 16px 32px rgba(0, 0, 0, 0.1); */
+}
+
+nav ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  line-height: 80px;
+}
+
+nav a {
+  color: #FEFAE0;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+section {
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  margin-bottom: 20px;
+  font-size: 20px;
+  
+}
+
+h1 {
+  margin: 0;
+  /* text-align: center; */
+  font-size: 80px;
+  font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+
+#subheading {
+  font-family: 'Manrope' ,sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  background-color: #11151C;
+  
+}
+
+.wrapper1 {
+  
+  /* background-color: #364156; */
+  /* background-color: #566246; */
+  background-color: #FEFAE0;
+  color: #11151C;
+}
+
+.content-wrapper {
+  /* height: 800px; */
+  /* position: fixed; */
+  width: 900px;
+  /* padding-top: 64px; */
+  display: flex;
+  align-items: center;
+  padding: 240px 0;
+  box-sizing: border-box;
+  margin: auto;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+#intro-wrapper {
+  padding-bottom: 360px;
+
+  /* padding-top: 10px; */
+}
+
+
+#intro {
+  margin-top: 140px;
+  border: none;
+}
+
+#intro p {
+  margin-top: 0px;
+  /* text-align: center; */
+  font-size: 34px;
+}
+
+#about p {
+  font-size: 30px;
+  
+}
+
+h2 {
+  /* color: #000;  */
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+
+.header-content {
+  width: 1000px;
+  margin: auto;
+}
+
+
+.exp {
+  border: 3px solid;
+  border-color: #FEFAE0;
+  border-radius: 45px;
+  padding: 40px;
+}
+
+.exp-desc {
+  font-size: 22px;
+}
+
+.item {
+  box-shadow:
+    0 4px 4px rgba(17, 21, 28, 0.25),  /* Base shadow */
+    0 8px 16px rgba(17, 21, 28, 0.15), /* Spread outer shadow */
+    0 16px 32px rgba(17, 21, 28, 0.1);  /* Wider, fainter shadow */
+}
+
+#project-wrapper {
+  width: 1000px;
+}
+
+#project {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.project-headline {
+  text-align: center;
+  font-size: 30px;
+  /* text-decoration: underline; */
+}
+
+.overlay-text {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 20px 0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  /* border: 2px solid #11151C; */
+  border-radius: 16px;
+}
+
+/* #loading-a {
+  margin-bottom: 0px;
+}*/
+
+#loading {
+  /* padding-bottom: 10px; */
+} 
+
+#loading-desc {
+  padding-bottom: 50px;
+} 
+
+#scheme-desc {
+  /* padding-bottom: 40px; */
+}
+
+.proj-desc {
+  font-size: 18px;
+}
+
+.item {
+  border: 3px solid #11151C;
+  border-radius: 35px;
+  padding: 20px;
+  text-align: center;
+  /* min-height: 600px; */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.item:hover h3 {
+  /* text-decoration: underline; */
+}
+
+.item a {
+  color: #11151C;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+
+#scheme {
+  /* font-size: 23px; */
+
+}
+
+
+
+footer {
+  background-color: #11151C;
+  color: #FEFAE0;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.skills, .desc {
+  /* display: none; */
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+
+.skills li, .desc li {
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  border: 2px solid #11151C;
+  border-radius: 10px;
+  /* background-color: #000; */
+}
+
+.technologies {
+  font-size: 20px;
+}
+
+.job-title {
+  font-size: 30px;
+  /* text-decoration: underline; */
+  margin-bottom: 0;
+}
+
+.company-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.company-tenure {
+  margin: 0;
+  font-size: 18px;
+}
+
+#contact-section {
+  text-align: center; /* Center the text inside the section */
+}
+
+#contact-header {
+  margin-bottom: 35px;
+}
+
+#contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the flex items horizontally */
+  margin-top: 0;
+}
+
+#contact-list a {
+  color: #FEFAE0; 
+}
+
+#contact-list img {
+  display: inline-block;
+  margin: 0px 30px; /* Adjust the margin between list items as needed */
+  /* padding: 0; */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  fill: #FEFAE0;
+}
+
+
+@media (min-width: 1601px) {
+
+  section {
+    font-size: 24px;
+  }
+
+  .proj-desc {
+    font-size: 18px;
+  }
+
+  .content-wrapper {
+    width: 1000px;
+  }
+
+  #intro-wrapper {
+    /* padding-top: 270px; */
+    padding: 380px 0;
+    width: 1200px;
+  }
+
+  #intro {
+    margin-top: 10px;
+  }
+
+  #about-wrapper {
+    width: 1000px;
+  }
+
+  .exp {
+    padding: 40px;
+  }
+
+  #contact-section {
+    padding-top: 80px;
+  }
+
+  footer {
+    padding-top: 80px;
+  }
+  
+}
+
+@media (max-width: 1250px) {
+  .content-wrapper {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    display: none;
+  }
+
+  .content-wrapper {
+    width: 360px;
+    padding: 120px 0;
+  }
+
+  #intro-wrapper {
+    padding: 110px 0;
+  }
+
+  h1 {
+    font-size: 58px;
+    text-align: center;
+  }
+
+  #intro {
+    margin-bottom: 240px;
+  }
+
+  #intro p {
+    margin-top: 10px;
+    font-size: 27px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  #about p {
+    font-size: 20px;
+  }
+
+  .job-title {
+    font-size: 22px;
+  }
+  
+  .company-name {
+    font-size: 20px;
+  }
+  
+  .company-tenure {
+    font-size: 16px;
+  }
+
+  .exp-desc {
+    font-size: 19px;
+  }
+
+  .exp-ul {
+    padding-left: 20px;
+  }
+
+  #project-wrapper {
+    width: 360px;
+  }
+
+  .project-headline {
+    text-decoration: underline;
+    font-size: 30px;
+  }
+  
+  .item:active {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+
+  
+
+  #contact-list img {
+    margin: 0px 20px; /* Adjust the margin between list items as needed */
+    /* padding: 0; */
+  }
+
+  .logo {
+    width: 42px;
+    height: auto;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  #contact-wrapper {
+    padding: 250px 0;
+  }
+
+  .topnav {
+    display: block;
+    overflow: hidden;
+    background-color: #13171E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* box-shadow: 0 2px 4px 0px rgba(0,0,0,.2); */
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: #FEFAE0;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: #11151C;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  #ham:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #11151C;
+    color: #FEFAE0;
+  }
+  
+  #corner {
+    color: #11151C;
+  }
+
+}
+
+
