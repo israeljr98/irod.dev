@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
       x.style.display = "block";
     }
   }
+
+  const toggleNavHam = document.getElementById('ham');
+
+  toggleNavHam.addEventListener('click', toggleNav);
   
   var links = document.querySelectorAll(".topnav a:not(.icon)");
   links.forEach(function(link) {
@@ -53,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // Check if the user has scrolled past the first section
   function handleScroll() {
-    const scrolledPastHome = window.scrollY > introWrapper.offsetHeight;
+    const scrolledPastHome = window.scrollY > desktopNav.offsetHeight;
   
     if (scrolledPastHome) {
       desktopNav.classList.add('scrolled');
